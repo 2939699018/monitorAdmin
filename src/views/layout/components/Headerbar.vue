@@ -1,6 +1,7 @@
 <template>
   <div class="headerbar">
     <hamburger :toggle-click="toggleSideBar" :is-active="sidebar.opened" class="hamburger-container"/>
+    <img src="../../../assets/logo.png" height="50" width="50" alt="嘉和美康" >
 
     <!--<breadcrumb class="breadcrumb-container"/>-->
 
@@ -34,7 +35,7 @@
               {{ $t('headerbar.dashboard') }}
             </el-dropdown-item>
           </router-link>
-          <a target="_blank" href="https://github.com/PanJiaChen/vue-element-admin/">
+          <a target="_blank" href="">
             <el-dropdown-item>
               {{ $t('headerbar.github') }}
             </el-dropdown-item>
