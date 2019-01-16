@@ -1,6 +1,6 @@
 <template>
   <div class="headerbar">
-    <!--<hamburger :toggle-click="toggleSideBar" :is-active="sidebar.opened" class="hamburger-container"/>-->
+    <hamburger :toggle-click="toggleSideBar" :is-active="sidebar.opened" class="hamburger-container"/>
 
     <!--<breadcrumb class="breadcrumb-container"/>-->
 
@@ -93,8 +93,11 @@ export default {
 .headerbar {
   height: 50px;
   line-height: 50px;
+  width: 100%;
   border-radius: 0px !important;
   background-color: #263445;
+  position: fixed;
+  z-index: 1001;
   .hamburger-container {
     line-height: 58px;
     height: 50px;

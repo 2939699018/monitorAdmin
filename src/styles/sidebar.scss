@@ -3,6 +3,7 @@
   // 主体区域 Main container
   .main-container {
     min-height: 100%;
+    top: 50px;
     transition: margin-left .28s;
     margin-left: $sideBarWidth;
     position: relative;
