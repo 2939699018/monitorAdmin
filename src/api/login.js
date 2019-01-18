@@ -6,9 +6,9 @@ export function loginByUsername(username, password) {
     password
   }
   return request({
-    url: '/login/login',
+    url: '/loginCross',
     method: 'post',
-    data
+    params: data
   })
 }
 
