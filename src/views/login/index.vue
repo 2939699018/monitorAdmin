@@ -50,7 +50,7 @@
         </div>
 
         <el-button class="thirdparty-button" type="primary" @click="showDialog=true">{{ $t('login.thirdparty') }}</el-button>
-        <el-button class="thirdparty-button" type="primary" @click="serverUpload">测试</el-button>
+        <!--<el-button class="thirdparty-button" type="primary" @click="serverUpload">测试</el-button>-->
       </div>
     </el-form>
 

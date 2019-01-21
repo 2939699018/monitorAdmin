@@ -51,8 +51,9 @@ const user = {
         loginByUsername(username, userInfo.password).then(response => {
           const data = response.data
           console.log('loginCross返回数据：' + JSON.stringify(data))
+          commit('SET_TOKEN', 'admin')
           // commit('SET_TOKEN', data.token)
-          // setToken(response.data.token)
+          setToken(response.data.token)
           resolve()
         }).catch(error => {
           reject(error)
