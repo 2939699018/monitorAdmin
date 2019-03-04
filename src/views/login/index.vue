@@ -69,7 +69,7 @@
 import { isvalidUsername } from '@/utils/validate'
 import LangSelect from '@/components/LangSelect'
 import SocialSign from './socialsignin'
-import { serverUpload, serverGet } from '@/api/sever'
+
 export default {
   name: 'Login',
   components: { LangSelect, SocialSign },
@@ -91,7 +91,7 @@ export default {
     return {
       loginForm: {
         username: 'admin',
-        password: '111111'
+        password: '1111111'
       },
       loginRules: {
         username: [{ required: true, trigger: 'blur', validator: validateUsername }],
@@ -124,15 +124,6 @@ export default {
       } else {
         this.passwordType = 'password'
       }
-    },
-    serverUpload() {
-      serverUpload('aa1', 'ddd').then(res => {
-        console.log('后台返回结果：' + JSON.stringify(res))
-      })
-    },
-    serverGet() {
-      var s = serverGet('aa1')
-      console.log('后台返回结果：' + s)
     },
     handleLogin() {
       this.$refs.loginForm.validate(valid => {
