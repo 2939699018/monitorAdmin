@@ -35,11 +35,6 @@
               {{ $t('headerbar.dashboard') }}
             </el-dropdown-item>
           </router-link>
-          <a target="_blank" href="">
-            <el-dropdown-item>
-              {{ $t('headerbar.github') }}
-            </el-dropdown-item>
-          </a>
           <el-dropdown-item divided>
             <span style="display:block;" @click="logout">{{ $t('headerbar.logOut') }}</span>
           </el-dropdown-item>

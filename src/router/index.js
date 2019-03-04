@@ -9,6 +9,7 @@ import Layout from '@/views/layout/Layout'
 /* Router Modules */
 import componentsRouter from './modules/components'
 import chartsRouter from './modules/charts'
+import systemRouter from './modules/system'
 import tableRouter from './modules/table'
 import nestedRouter from './modules/nested'
 
@@ -111,6 +112,7 @@ export default new Router({
 })
 
 export const asyncRouterMap = [
+  systemRouter,
   {
     path: '/permission',
     component: Layout,

@@ -1,6 +1,10 @@
 export default {
   route: {
     dashboard: 'Dashboard',
+    system: 'system',
+    user: 'user',
+    role: 'role',
+    menu: 'menu',
     introduction: 'Introduction',
     documentation: 'Documentation',
     guide: 'Guide',
